@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 0 35px;
+    /* top: 1044px;
+    left: 139px;
+    gap: 0px;
+    opacity: 0px; */
+    background: #FFE7E1;
+    
+
+}
+.container h1{
+    text-align: center;
+    text-decoration: none;
+}
+.container h1 a{
+    color: black;
+    font-family: Poppins;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 90px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-decoration: none;
+
+}
+.card-wrapper{
+    width: 1160px;
+    height: 562px;
+    /* top: 1044px; */
+    left: 100px;
+    gap: 0px;
+    opacity: 0px;
+    padding: 10px 10px;
+    cursor: pointer;
+    position: relative;
+    
+}
+.card-wrapper i{
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 45px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.card-wrapper i:first-child{
+    left: -23px;
+    display: none;
+}
+.card-wrapper i:last-child{
+    right: -23px;
+}
+.card-wrapper .carousel{
+    display: flex;
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    gap: 8px;
+    scroll-behavior: smooth;
+} 
+
+.carousel .dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel .dragging img{
+    pointer-events: none;
+
+}
+.card-wrapper .carousel svg{
+    width: 367px;
+    height: 493px;
+    object-fit: cover;
+    margin-left: 14px;
+}
+.card-wrapper .carousel .svg{
+    width: 367px;
+    height: 493px;
+    /* top: 20px;
+    left: 577px;
+    gap: 0px;
+    opacity: 0px; */
+    position: absolute;
+
+}
+.card-wrapper .carousel .svg .content{
+    width: 274.47px;
+    height: 116px;
+    top: 177px;
+    left: 69px;
+    position: absolute;
+    color: #676767;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    /* gap: 0px;
+    border-radius: 10px 0px 0px 0px;
+    opacity: 0px; */
+}
+.card-wrapper .carousel .svg .content:hover{
+    opacity: 1;
+}
+.content h3{
+    width: 231px;
+    height: 29px;
+    text-align: center;
+    /* top: 177px;
+    left: 93px;
+    gap: 0px; */
+    opacity: 0px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.content p{
+   font-size: 20px;
+   font-weight: 700;
+    
+}
+.content p i{
+    width: 14px;
+    height: 20px;
+    margin-top: 7px;
+    margin-left: 7px;
+
+}
+.content .card-btn{
+    width: 117.08px;
+    height: 54px;
+    color:#fff;
+    background-color: #FCCF31;
+    border-radius: 4px;
+}
+.carousel img:first-child{
+    margin-left: 0px;
+}
+@media screen and (max-width:9px) {
+    .carousel img{
+        width: calc(100/2);
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .carousel img{
+        width:100%;
+    }
+    
+}
